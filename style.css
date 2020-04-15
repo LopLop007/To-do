@@ -1,0 +1,119 @@
+body{
+
+	margin: 0;
+	font-family: helvetica;
+
+}
+
+h1{
+
+	color:white;
+	font-size: 36px;
+
+}
+
+header{
+
+	margin-top: 10px;
+	margin-right: 80%;
+	background-color: salmon;
+
+}
+
+#add-tarefas{
+	display: flex;
+	margin-top: 90px;
+	justify-content: center;
+}
+
+#add-tarefas button{
+
+	padding: 15px;
+	border-radius: 5px;
+	background-color: green;
+	color:white;
+	border-color: green;
+	box-shadow: 3px 3px 3px gray;
+	cursor: pointer;
+	margin-left: 20px;
+
+}
+
+#add-tarefas input{
+
+	font-size: 20px;
+	width: 800px;
+	height: 60px;
+	border-radius: 2px;
+	border: 2px solid gray;
+	padding-left: 2px;
+
+}
+
+#add-tarefas button:hover{
+
+	background-color: darkgreen;
+	border-color: darkgreen;
+
+}
+
+#tarefas{
+
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+
+}
+
+#tarefas ul{
+
+	list-style-type: none;
+	margin-right: 200px;
+
+}
+
+#tarefas ul li{
+
+	font-size: 20px;
+	border: 2px solid gray;
+	padding: 20px;
+	width: 750px;
+	background-color: salmon;
+	color:white;
+	box-shadow: 5px 5px 5px gray;
+	border-radius: 5px;
+	border-color: salmon;
+	margin-top: 10px;
+
+}
+
+#tarefas ul li button{
+
+	float: right;
+	padding: 4px;
+	background-color: red;
+	width: 120px;
+	border:1px solid red;
+	box-shadow: 2px 2px 2px gray;
+	border-radius: 5px;
+	cursor: pointer;
+	color:white;
+
+}
+
+#tarefas ul li button:hover{
+
+	background-color: darkred;
+	border-color: darkred;
+
+}
+
+footer{
+
+	text-align: center;
+	background-color: salmon;
+	color:white;
+	padding: 40px;
+	margin-top: 50%;
+
+}
