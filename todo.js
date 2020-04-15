@@ -1,16 +1,14 @@
 
-var ul = document.querySelector('#tarefas ul')
+const ul = document.querySelector('#tarefas ul')
 
-var btn_add = document.querySelector('#add-tarefas button')
+const btn_add = document.querySelector('#add-tarefas button')
 
-// Puxa dados do storage se tiver ou gera um vetor vazio
-var vetor_tarefas = JSON.parse(localStorage.getItem('lista_tarefas')) || []
+const vetor_tarefas = JSON.parse(localStorage.getItem('lista_tarefas')) || []
 
 function renderizar() {
 	
 	ul.innerHTML = ''
 
-	// Esse tipo de vetor já retorna o indice em forma de string
 	for(tarefas of vetor_tarefas){
 
 		var pos = vetor_tarefas.indexOf(tarefas)
@@ -42,7 +40,6 @@ btn_add.onclick = function(){
 
 function deletar(param){ 
 	
-	// (slice) remove da posição especificada
 	vetor_tarefas.splice(param,1)
 	renderizar()
 	saveToStorage()
@@ -50,7 +47,7 @@ function deletar(param){
 
 
 function saveToStorage(){
-	//  JSON.stringify transforma os dados em string
+
 	localStorage.setItem('lista_tarefas', JSON.stringify(vetor_tarefas))
 
 }
